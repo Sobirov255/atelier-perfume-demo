@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TASTY — restoran uchun demo veb-sayt. Menyu, galereya va bog‘lanish bo‘limlari.">
+  <title>TASTY — Restaurant Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-note">DEMO LOYIHA · TASTY — haqiqiy restoran emas</div>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="TASTY bosh sahifa">TASTY<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menyuni ochish" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="#home">Bosh sahifa</a><a href="#about">Biz haqimizda</a><a href="#menu">Menyu</a><a href="#gallery">Galereya</a><a class="nav-cta" href="#contact">Bog‘lanish</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">MAZALI TAOM · YOQIMLI MUHIT</p>
+        <h1>Har bir luqmada<br><em>o‘zgacha ta’m.</em></h1>
+        <p class="hero-text">Yangi tayyorlangan taomlar, iliq muhit va unutilmas uchrashuvlar uchun joy.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#menu">Menyuni ko‘rish <span>↗</span></a><a class="text-link" href="#about">Biz haqimizda</a></div>
+        <div class="hero-meta"><span>✦ Sifatli masalliqlar</span><span>✦ Har kuni yangi taomlar</span></div>
+      </div>
+      <div class="hero-art" aria-label="Taom uchun dekorativ tasvir">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="plate"><div class="plate-food">🥘</div></div>
+        <div class="floating-tag tag-top">FRESH<br><b>DAILY</b></div><div class="floating-tag tag-bottom">MADE WITH<br><b>LOVE ♥</b></div>
+      </div>
+      <div class="hero-index">01 <span>/</span> 04</div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="section-kicker">01 — BIZ HAQIMIZDA</div>
+      <div><h2>Oddiy taom emas,<br><em>yaxshi kayfiyat.</em></h2><p class="body-copy">TASTY — mazali taom va samimiy xizmatni birlashtirgan restoran konsepti. Bu demo sahifa kichik bizneslar uchun menyu, xizmatlar va aloqa ma’lumotlarini internetda chiroyli ko‘rsatish imkoniyatini namoyish etadi.</p><a class="under-link" href="#contact">Biz bilan bog‘laning <span>→</span></a></div>
+      <div class="intro-stat"><strong>100%</strong><span>Demo kontent<br>namunasi</span></div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading"><div><div class="section-kicker">02 — TANLANGAN TAOMLAR</div><h2>Bizning <em>menyu.</em></h2></div><p>Namunaviy menyu. Haqiqiy mijoz loyihasida taom nomlari, rasmlari va narxlari buyurtmachi bergan ma’lumotlar bilan almashtiriladi.</p></div>
+      <div class="filters" role="group" aria-label="Menyu kategoriyalari"><button class="filter active" data-filter="all">Barchasi</button><button class="filter" data-filter="main">Asosiy taomlar</button><button class="filter" data-filter="salad">Salatlar</button><button class="filter" data-filter="dessert">Desertlar</button></div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="food-card" data-category="main"><div class="food-visual visual-one">🍝</div><div class="food-info"><div><h3>Italian pasta</h3><p>Maxsus sous va yangi ko‘katlar</p></div><strong>68 000 so‘m</strong></div></article>
+        <article class="food-card" data-category="main"><div class="food-visual visual-two">🍔</div><div class="food-info"><div><h3>Classic burger</h3><p>Mol go‘shti, pishloq va sabzavot</p></div><strong>55 000 so‘m</strong></div></article>
+        <article class="food-card" data-category="salad"><div class="food-visual visual-three">🥗</div><div class="food-info"><div><h3>Fresh salad</h3><p>Mavsumiy sabzavotlar</p></div><strong>38 000 so‘m</strong></div></article>
+        <article class="food-card" data-category="dessert"><div class="food-visual visual-four">🍰</div><div class="food-info"><div><h3>Cheesecake</h3><p>Yumshoq krem va rezavorlar</p></div><strong>32 000 so‘m</strong></div></article>
+      </div>
+    </section>
+
+    <section class="quote-band"><p>“Yaxshi taom — yaxshi kunning boshlanishi.”</p><span>TASTY RESTAURANT CONCEPT</span></section>
+
+    <section class="gallery-section section" id="gallery">
+      <div class="section-heading"><div><div class="section-kicker">03 — GALEREYA</div><h2>Ta’mni <em>his qiling.</em></h2></div><p>Bu joyga restoran egasining haqiqiy taomlari va interyer suratlari joylanadi.</p></div>
+      <div class="gallery-grid"><div class="gallery-tile tile-a"><span>01</span><b>FRESH<br>INGREDIENTS</b><i>🥑</i></div><div class="gallery-tile tile-b"><span>02</span><b>MADE<br>WITH CARE</b><i>🍽️</i></div><div class="gallery-tile tile-c"><span>03</span><b>SWEET<br>MOMENTS</b><i>🍓</i></div></div>
+    </section>
+
+    <section class="contact-section" id="contact"><div><div class="section-kicker">04 — BOG‘LANISH</div><h2>Birga mazali<br><em>lahzalar yaratamiz.</em></h2><p>Demo loyiha. Haqiqiy buyurtma uchun telefon, Telegram va manzil ma’lumotlari mijoz bilan kelishiladi.</p></div><div class="contact-card"><div class="contact-line"><span>Telefon</span><b>+998 XX XXX XX XX</b></div><div class="contact-line"><span>Manzil</span><b>Toshkent, O‘zbekiston</b></div><div class="contact-line"><span>Ish vaqti</span><b>Har kuni · 10:00–22:00</b></div><a class="btn btn-light" href="mailto:hello@example.com?subject=TASTY%20demo%20sayti">Email yozish <span>↗</span></a></div></section>
+  </main>
+
+  <footer><a class="logo" href="#home">TASTY<span>.</span></a><p>© <span id="year"></span> TASTY Demo. Portfolio uchun yaratilgan.</p><a href="#home">Yuqoriga ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
